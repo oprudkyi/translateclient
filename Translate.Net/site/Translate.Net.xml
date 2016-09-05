@@ -154,7 +154,7 @@ Features:
 			<Application_XML_File_URL>http://translate-net.appspot.com/Translate.Net.xml</Application_XML_File_URL>
 		</Application_URLs>
 		<Download_URLs>
-			<Primary_Download_URL>http://translateclient.googlecode.com/files/translate.net.0.1.3493.4408.exe</Primary_Download_URL>
+			<Primary_Download_URL>https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/translateclient/translate.net.0.1.3493.4408.exe</Primary_Download_URL>
 			<Secondary_Download_URL />
 			<Additional_Download_URL_1 />
 			<Additional_Download_URL_2 />
