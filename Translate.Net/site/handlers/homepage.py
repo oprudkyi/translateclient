@@ -1,11 +1,14 @@
 import os, sys
+"""
 from google.appengine.ext import webapp
 from google.appengine.ext.webapp.util import run_wsgi_app
+"""
+import webapp2
 import logging
 import datetime
 from google.appengine.ext import db
 
-class MainPage(webapp.RequestHandler):
+class MainPage(webapp2.RequestHandler):
   def parse(self, header):
         """
         Return a list of language tags sorted by their "q" values.  For example,
@@ -53,12 +56,14 @@ class MainPage(webapp.RequestHandler):
         body = open(path, "r").read()
         self.response.out.write(body)
     
-application = webapp.WSGIApplication(
+app = webapp2.WSGIApplication(
                                      [('/', MainPage)],
                                      debug=True)
 
+"""
 def main():
   run_wsgi_app(application)
 
 if __name__ == "__main__":
   main()
+"""

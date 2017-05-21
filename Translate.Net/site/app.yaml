@@ -1,12 +1,13 @@
 application: translate-net-hrd
-version: 2
-runtime: python
+version: 3
+runtime: python27
 api_version: 1
+threadsafe: true
 
 handlers:
-- url: /admin/.*
-  script: $PYTHON_LIB/google/appengine/ext/admin
-  login: admin
+    #- url: /admin/.*
+    #script: $PYTHON_LIB/google/appengine/ext/admin
+    #login: admin
 
 - url: /(.*\.(ico))
   static_files: \1
@@ -46,5 +47,5 @@ handlers:
   upload: (.[^/]*\.(htm|html))
   
 - url: /
-  script: handlers/homepage.py
+  script: handlers.homepage.app
 
